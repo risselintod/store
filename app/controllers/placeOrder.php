@@ -166,8 +166,11 @@ function generate_new_transaction_number() {
 
     $redirectUrls = new RedirectUrls();
     $redirectUrls
-        ->setReturnUrl('http://localhost/mod08/store/app/controllers/pay.php?success=true')
-        ->setCancelUrl('http://localhost/mod08/store/app/controllers/pay.php?success=false');
+        // ->setReturnUrl('http://localhost/mod08/store/app/controllers/pay.php?success=true')
+        // ->setCancelUrl('http://localhost/mod08/store/app/controllers/pay.php?success=false');
+
+    ->setReturnUrl('https://queendessert.herokuapp.com/app/controllers/pay.php?success=true')
+    ->setCancelUrl('https://queendessert.herokuapp.com/app/controllers/pay.php?success=false');
 
     $payment = new Payment();
     $payment->setIntent('sale')
