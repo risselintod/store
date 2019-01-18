@@ -39,7 +39,7 @@ $status_id = 1;
 $payment_mode_id = 2;
 $address = $_SESSION['address'];
 
-$new_order_query = "INSERT INTO orders(user_id, transaction_code, purchase_date, status_id, payment_mode_id) VALUES ('$user_id', '$trans_code', '$purchase_date', '$status_id', '$payment_mode_id');";
+$new_order_query = "INSERT INTO orders(user_id, total, transaction_code, purchase_date, status_id, payment_mode_id) VALUES ('$user_id', $total, '$trans_code', '$purchase_date', '$status_id', '$payment_mode_id');";
 $new_order = mysqli_query($conn, $new_order_query);
 $new_order_id = mysqli_insert_id($conn);
 
@@ -59,5 +59,5 @@ unset($_SESSION['address']);
 $_SESSION['new_txn_number'] = $trans_code;
 mysql_error($conn);
 mysqli_close($conn);
-// header('Location: ../views/confirmation.php');
+header('Location: ../views/confirmation.php');
 ?>
