@@ -4,10 +4,13 @@
 
 	<div class="container-fluid mt-5">
 		<div class="jumbotron home text-center">
-			<h1> Fret Store </h1>
-			<p> Your favorite Fret Store </p>
-			<img src="../assets/images/dine.jpeg" width="350">
-
+			<div class="row">
+				<div class="col">
+					<h1> Fret Store </h1>
+					<p> Your favorite Fret Store </p>
+					<img src="../assets/images/dine.jpeg" width="350">
+				</div>
+			</div>
 		</div> <!-- end jumbotron -->
 		
 	</div> <!-- end container-fluid -->
