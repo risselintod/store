@@ -88,7 +88,7 @@
 								</div>
 							</div> <!-- end card -->
 					 	<?php  }; echo "</div>"; ?> <!-- end row -->
-				</div>
+				</div> <!-- end container -->
 			</div>
 		</div> <!-- end row -->
 	</div> <!-- end container -->
